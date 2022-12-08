@@ -35,3 +35,16 @@ function pluPlusUsingDoWhile(number, times) {
 }
 
 console.log(pluPlusUsingWhile(10, 3));
+
+function pluPlusUsingRecursion(number, times) {
+	if (parseInt(times) === times && times >= 1) {
+		number++;
+
+		number = pluPlusUsingRecursion(number, --times);
+	}
+
+	return number; 
+}
+
+console.log(pluPlusUsingRecursion(10, 0));
+console.log(pluPlusUsingRecursion(10, 'a'));
