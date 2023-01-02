@@ -1,0 +1,22 @@
+{
+  "name": "npm-training",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon app.js",
+    "prod": "node app.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node-notifier": "^10.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/nonamez/CAFS3.git"
+  },
+  "author": "hello@nonamez.name",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
