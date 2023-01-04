@@ -11,10 +11,6 @@
     "assets:dev": "npm run assets:development",
     "assets:prod": "npm run assets:production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nonamez/CAFS3.git"
-  },
   "author": "hello@nonamez.name",
   "license": "Beerware",
   "bugs": {
@@ -23,6 +19,7 @@
   "homepage": "https://github.com/nonamez/CAFS3#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "bootswatch": "^5.2.3",
     "cookie-parser": "^1.4.6",
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
