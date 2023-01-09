@@ -1,0 +1,17 @@
+# one time php script run without compose:
+# docker run --rm -v $(pwd):/app/ php:8.2-cli php /app/phpinfo.php
+
+services:
+    # interactive:
+    # docker exec --interactive --tty ca-php /bin/sh
+    # docker exec -it ca-php /bin/sh
+    # 
+    # one time:
+    # docker exec ca-php php /app/info.php 
+    php:
+        container_name: ca-php
+        image: php:8.2-cli
+        working_dir: /app
+        volumes:
+            - ./src:/app
+        tty: true
