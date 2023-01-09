@@ -6,9 +6,9 @@
     "server:prod": "npx cross-env NODE_ENV=production node ./bin/www",
     "server:dev": "npx cross-env NODE_ENV=development nodemon ./bin/www",
     
-    "assets:development": "npx mix",
-    "assets:watch": "npx mix watch",
-    "assets:production": "npx mix --production",
+    "assets:development": "mix",
+    "assets:watch": "mix watch",
+    "assets:production": "mix --production",
 
     "assets:dev": "npm run assets:development",
     "assets:prod": "npm run assets:production"
